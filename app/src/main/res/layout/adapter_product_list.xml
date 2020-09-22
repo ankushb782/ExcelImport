@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="5dp">
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btnAdd"
+            android:orientation="vertical">
+        <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical"
+                android:text="L001"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_vertical"
+            android:text="Color - White | Size - S"
+            android:textSize="16sp"/>
+        <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:text="MRP $10.0"
+                android:textSize="14sp"
+                 />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/grey"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:text="Discount"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:text="$0.0"
+                android:textSize="14sp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/llAddMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+
+        <Button
+                android:id="@+id/btnMinus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/colorPrimary"
+                android:text="-"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        <TextView
+                android:id="@+id/btnQty"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@android:color/white"
+                android:text="0"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                />
+        <Button
+                android:id="@+id/btnPlus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/colorPrimary"
+                android:text="+"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                />
+    </LinearLayout>
+    <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:background="@color/colorPrimary"
+            android:text="Add"
+            android:textColor="@android:color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
